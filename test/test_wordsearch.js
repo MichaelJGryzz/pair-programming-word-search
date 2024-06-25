@@ -35,4 +35,21 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+
+  it("should return true if the word is present", function() {
+    const result = wordSearch([
+      ['A', 'W', 'L', 'F', 'Q', 'U', 'A', 'L'],
+      ['S', 'Y', 'I', 'N', 'F', 'E', 'L', 'G'],
+      ['Y', 'F', 'G', 'F', 'Q', 'U', 'A', 'L'],
+      ['H', 'M', 'H', 'T', 'E', 'V', 'R', 'G'],
+      ['W', 'H', 'T', 'S', 'Y', 'E', 'R', 'L'],
+      ['B', 'F', 'H', 'E', 'N', 'E', 'Y', 'B'],
+      ['U', 'B', 'O', 'W', 'A', 'P', 'A', 'I'],
+      ['O', 'D', 'U', 'A', 'K', 'U', 'A', 'S'],
+      ['E', 'Z', 'S', 'F', 'K', 'U', 'A', 'L'],
+      ['J', 'X', 'E', 'W', 'Q', 'I', 'D', 'M'],
+    ], 'LIGHTHOUSE')
+
+    assert.isTrue(result);
+  });
 });
