@@ -1,4 +1,6 @@
 const wordSearch = (letters, word) => {
+  if (!letters.length || !letters[0].length) return false;
+  
   const horizontalJoin = letters.map(ls => ls.join(''));
   for (const l of horizontalJoin) {
     if (l.includes(word)) return true;
